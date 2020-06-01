@@ -19,9 +19,6 @@
 </div>
 <video id="test_video" controls autoplay>
 <!--    <source src="rtsp://184.72.239.149/vod/mp4:BigBuckBunny_175k.mov" type="application/x-rtsp">-->
-<!--    <source src="rtsp://mis:admin789@10.1.240.5:554/cam/realmonitor?channel=30&subtype=0" type="application/x-rtsp">-->
-    <source src="rtsp://mis:mis789@10.1.240.1:554/cam/realmonitor?channel=2&subtype=1" type="application/x-rtsp">
-<!--    <source src="rtsp://admin:hsl88888@192.168.10.245:554/cam/realmonitor?channel=4&subtype=0" type="application/x-rtsp">-->
     <!--<source src="rtsp://127.0.0.1:8554/test" type="application/x-rtsp">-->
 </video>
 <script src="https://cdn.bootcss.com/babel-polyfill/7.0.0-beta.2/polyfill.min.js"></script>
@@ -33,8 +30,7 @@
     if (window.Streamedian) {
         // var p = Streamedian.player('test_video', {socket: "ws://45.32.210.71/ws/"})
         var p = Streamedian.player('test_video', {
-            socket: "ws://localhost:5000/ws/"
-            // socket: "ws://hsl.erlangs.net:5002/ws/"
+            // socket: "ws://localhost:5000/ws/"
         })
         this.player = p;
     }
